@@ -1,5 +1,8 @@
 var images = [{
     "id": "firstOwl",
+    "price": "2'205.00 CHF",
+    "name": "Edeses",
+    "location": "Calpe",
     "url": "http://www.e-domizil.ch/ferienhaus/2020424/edeses-calpe-costa-blanca-mittelmeerkueste-valencia-spanien/",
     "images": [
         "https://dyn.v-office.com/image/full/669048.jpg",
@@ -45,6 +48,9 @@ var images = [{
     ]
 }, {
     "id": "secondOwl",
+    "price": "2'578.50 Euro",
+    "name": "Villa Amerador",
+    "location": "El Campello, Provinz Alicante",
     "url": "https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p431297",
     "images": [
         "https://odis.homeaway.com/odis/listing/6af95232-384a-4881-90d4-d0d1bce70fec.c10.jpg",
@@ -74,6 +80,9 @@ var images = [{
     ]
 }, {
     "id": "thirdOwl",
+    "price": "2'552.50 Euro",
+    "name": "Kleines Landhaus am Meer",
+    "location": "Mont-ras, El Baix Empordà",
     "url": "https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p867954",
     "images": [
         "https://odis.homeaway.com/odis/listing/b5d79410-b58f-4a70-b8ed-e125e1ff97dd.c10.jpg",
@@ -102,6 +111,9 @@ var images = [{
     ]
 }, {
     "id": "fourthOwl",
+    "price": "3'828.50 Euro",
+    "name": "Casa Calonge",
+    "location": "Calonge, Provinz Girona",
     "url": "https://www.fewo-direkt.de/ferienwohnung-ferienhaus/p1021175",
     "images": [
         "https://odis.homeaway.com/odis/listing/6bdc8e3f-4469-43a5-aa8f-6fbac120b4d2.c10.jpg",
