@@ -14,7 +14,8 @@ $(function () {
         imageDiv.owlCarousel({
             items: 1,
             lazyLoad: true,
-            loop: true
+            loop: true,
+            autoHeight:true
         })
 
         // init lightbox
@@ -49,7 +50,7 @@ function createTableString(id, name, price, location, url) {
         location +
         "</td></tr><tr><td>Link</td><td><a target='_blank' href='" +
         url +
-        "'>Hier Clicken</a></td></tr></table>"
+        "'>Hier Klicken</a></td></tr></table>"
 }
 
 function overlayOn() {
