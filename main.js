@@ -7,7 +7,7 @@ $(function () {
         
         // load images and create a and img tag
         $.each(item.images, function (index, item) {
-            var img = $("<a href='" + item + "' data-imagelightbox='" + imageDiv + "'><img class='owl-lazy' data-src='" + item + "'></a>")
+            var img = $("<a href='" + item + "' data-imagelightbox='" + parentIndex + "'><img class='owl-lazy' data-src='" + item + "'></a>")
             img.appendTo(imageDiv);
         })
 
@@ -20,7 +20,10 @@ $(function () {
     
         // init lightbox
         var selector = "a[data-imagelightbox='" + parentIndex + "']";
-        $(selector).imageLightbox();
+        $(selector).imageLightbox({
+            onStart:function() { overlayOn(); },
+            onEnd:function() { overlayOff(); }
+        });
 
         // also create table 
         var tableString = createTableString(item.name, item.price, item.location, item.url);
@@ -46,4 +49,14 @@ function createTableString(name, price, location, url) {
     "</td></tr><tr><td>Url</td><td><a target='_blank' href='" + 
     url + 
     "'>Hier Clicken</a></td></tr></table>"
+}
+
+function overlayOn()
+{
+    $( '<div id="imagelightbox-overlay"></div>' ).appendTo( 'body' );
+}
+
+function overlayOff()
+{
+    $( '#imagelightbox-overlay' ).remove();
 }
