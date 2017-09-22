@@ -1,4 +1,3 @@
-var tbl;
 $(function () {
     $.each(images, function (parentIndex, item) {
         // get parent div
@@ -28,7 +27,6 @@ $(function () {
         // also create table 
         var tableString = createTableString(item.name, item.price, item.location, item.url);
         tableDiv.append(tableString);
-        console.log(tableString);
     })
 })  
 
